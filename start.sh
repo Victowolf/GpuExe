@@ -2,20 +2,21 @@
 set -e
 
 echo "============================================"
-echo "      SWINIR TRAINING JOB STARTED"
+echo "   GPU SWINIR TRAINING STARTED"
 echo "============================================"
 
-cd /workspace/SwinIR
+echo "[1] Switching into repo folder"
+cd /workspace/GpuExe
 
-echo "[1] Installing Python dependencies..."
+echo "[2] Installing Python dependencies"
 pip install --no-cache-dir -r requirements.txt
 
-echo "[2] Creating output folders..."
+echo "[3] Creating output folders"
 mkdir -p outputs checkpoints logs
 
-echo "[3] Launching training..."
+echo "[4] Launching training..."
 python main_train_swinir.py --config configs/train_swinir_custom.json
 
 echo "============================================"
-echo "      TRAINING COMPLETED"
+echo "   TRAINING COMPLETED SUCCESSFULLY"
 echo "============================================"
