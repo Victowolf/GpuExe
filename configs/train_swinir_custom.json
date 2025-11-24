@@ -1,0 +1,22 @@
+{
+    "task": "swinir_sr",
+    "scale": 4,
+
+    "epochs": 60,
+    "batch_size": 8,
+    "num_workers": 8,
+
+    "tile_size": 256,
+
+    "embed_dim": 32,
+    "depths": [2, 2, 2, 2],
+    "num_heads": [2, 2, 2, 2],
+
+    "lr": 0.0002,
+
+    "train_hr_dir": "dataset/HR_tiles",
+    "train_lr_dir": "dataset/LR_tiles",
+
+    "save_model_dir": "checkpoints",
+    "save_freq": 1
+}
