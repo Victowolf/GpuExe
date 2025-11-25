@@ -1,22 +1,22 @@
 {
-    "task": "swinir_sr",
-    "scale": 4,
+  "task": "swinir_sr",
+  "scale": 4,
 
-    "epochs": 60,
-    "batch_size": 8,
-    "num_workers": 8,
+  "epochs": 60,
+  "batch_size": 6,
+  "num_workers": 8,
 
-    "tile_size": 256,
+  "tile_size": 256,
 
-    "embed_dim": 32,
-    "depths": [2, 2, 2, 2],
-    "num_heads": [2, 2, 2, 2],
+  "embed_dim": 180,
+  "depths": [6, 6, 6, 6, 6, 6],
+  "num_heads": [6, 6, 6, 6, 6, 6],
 
-    "lr": 0.0002,
+  "lr": 0.0001,
 
-    "train_hr_dir": "dataset/HR_tiles",
-    "train_lr_dir": "dataset/LR_tiles",
+  "train_hr_dir": "dataset/HR_tiles",
+  "train_lr_dir": "dataset/LR_tiles",
 
-    "save_model_dir": "checkpoints",
-    "save_freq": 1
+  "save_model_dir": "checkpoints",
+  "save_freq": 1
 }
